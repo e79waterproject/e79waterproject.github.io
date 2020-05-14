@@ -1,0 +1,97 @@
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.svg g {
+  cursor: crosshair;
+}
+.svg g polygon {
+  stroke: white;
+  stroke-width: 4;
+  transform: scale(1);
+  opacity: 0.5;
+  transition: opacity 200ms ease-in;
+}
+.svg g text {
+  text-anchor: middle;
+  alignment-baseline: middle;
+  transition: opacity 200ms ease-in;
+font-family: 'Montserrat';
+  
+}
+.svg g text:not(.data) {
+  fill: white;
+}
+.svg g text.data {
+  fill: black;
+  font-weight: 100;
+    font-size: 30px;
+    line-height: 1800%;
+  
+}
+.svg g text.data.title {
+  font-size: 60px;
+  fill: #1f7a7a;
+    font-weight: 1000;
+  
+}
+.svg g .state-name,
+.svg g .data {
+  opacity: 0;
+}
+.svg g .state-abbr {
+  opacity: 1;
+}
+.svg g.hover .state-name,
+.svg g.hover .data {
+  animation: fade-in 300ms ease-in 200ms forwards;
+}
+.svg g.hover .state-abbr {
+  animation: fade-out 300ms ease-in 200ms forwards;
+}
+.svg g.hover polygon {
+  opacity: 1;
+  transition: fill 200ms ease-in;
+  animation: scale-polygon 300ms ease-in forwards;
+}
+
+@keyframes scale-polygon {
+  from {
+    transform: scale(1);
+    stroke-width: 4;
+  }
+  to {
+    transform: scale(2);
+    stroke-width: 2;
+  }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+h1 {
+  color: #999;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.6em 0;
+}
+h1 a {
+  color: #85e0e0;
+  text-decoration: none;
+  font-size: 0.7em;
+}
