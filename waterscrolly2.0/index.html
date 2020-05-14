@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic water scroll builder</title>
+    <link href="stylesheets/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet" />
+</head>
+
+<body>
+    <section class = "intro_sec">
+        <div class = "title_illustration">
+            <img id="lake" src="water-contam-intro-illustr.png">
+        </div>
+    </section>
+    <!--container for main graphic and text-->
+    <section class = "main_scrolly">
+        <div class = "viz" data-min-width="500" data-max-width="1049">
+            <img id="graphic_stream" src="waterContaminantViz%20FINAL-01.jpg">
+            <img id="pfos_scale" class="scroll_trigger" src="scale-graphics/pfos.png" style="opacity:0; visibility:hidden;">
+            <img id="arsenic_scale" class="scroll_trigger" src="scale-graphics/arsenic.png" style="opacity:0; visibility:hidden;">
+            <img id="nitrates_scale" class="scroll_trigger" src="scale-graphics/nitrates.png" style="opacity:0; visibility:hidden;">
+            <img id="lead_scale" class="scroll_trigger" src="scale-graphics/lead.png" style = "opacity:0; visibility:hidden;">
+            <img id="trihalo_scale" class="scroll_trigger" src="scale-graphics/trihalo.png" style ="opacity:0; visibility:hidden;">
+            <img id="atrazine_scale" class="scroll_trigger" src="scale-graphics/atrazine.png" style="opacity:0; visibility:hidden;">
+        </div>
+        <!--contaminant text -->
+        <div class = "text">
+            <div>
+                <p class="scroll_trigger" id = "introduction1" style="opacity:0;">In the US, the EPA regulates all public drinking water (tap water). </p>
+                <p class="scroll_trigger" id = "introduction2" style="opacity:0;">The EPA, EWG, and WHO all have different standards
+                    when it comes to the level of contaminants deemed acceptable in drinking water.</p>
+                <p class="scroll_trigger" id = "introduction3" style="opacity:0;">Here's a quick look at just a handful of the contaminants found in drinking water across the country.</p>
+                <img id = "legend" src="legend.png">
+            </div>
+            <!--PFOS -->
+            <div id = "pfos">
+                <h2 class="scroll_trigger" style="opacity:0;">PFOS</h2>
+                <p class ="scroll_trigger" style="opacity:0;">Per- and Poly-fluorinated substances are used to create products that resist heat, oil, stains, grease and water. They are also used in some fire-fighting products.</p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>industrial by-product, or by unintended spills</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li>may effect the endocrine and immune systems</li>
+                    <li>may increase risk of some cancers</li></ul>
+                <div class ="scroll_trigger" id = "states" style = "opacity:0;">
+                    <p class="stateNum" >29 </p>
+                    <p>states above health guideline levels</p>
+                </div>
+                <div class ="scroll_trigger" id = "population" style = "opacity:0;">
+                    <p class="stateNum">7,700,000</p>
+                    <p>individuals affected</p>
+                </div>
+            </div>
+            <div id = "arsenic">
+                <h2 class="scroll_trigger" style="opacity:0;">Arsenic</h2>
+                <p class ="scroll_trigger" style="opacity:0;">Arsenic is an element that occurs naturally in rocks and soil and is used for a variety of purposes within industry and agriculture.
+                    It is also a byproduct of copper smelting, mining, and coal burning.</p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>naturally occurring (in rocks and soil)</li>
+                <li> by-product of various industrial processes</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li>can lead to cancer</li>
+                    <li>may cause various skin problems</li></ul>
+                <div class ="scroll_trigger" id = "states" style = "opacity:0;">
+                    <p class="stateNum" >50</p>
+                    <p>states above health guideline levels</p>
+                </div>
+                <div class ="scroll_trigger" id = "population" style = "opacity:0;">
+                    <p class="stateNum">107,000,000</p>
+                    <p>individuals affected</p>
+                </div>
+            </div>
+            <div id = "nitrates">
+                <h2 class="scroll_trigger" style="opacity:0;">Nitrates</h2>
+                <p class ="scroll_trigger" style="opacity:0;">Nitrate is a compound that is formed naturally when nitrogen combines with oxygen or ozone.
+                    Nitrogen is essential for all living things, but high levels of nitrate in drinking water can be dangerous to health, especially for infants and pregnant women. </p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>naturally occurring</li>
+                    <li>agricultural run-off</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li>causes problems with oxygen transport in the blood (methemoglobinemia)</li>
+                    <li>causes generalised health problems for infants</li></ul>
+                <div class ="scroll_trigger" id = "states" style = "opacity:0;">
+                    <p class="stateNum" >49</p>
+                    <p>states above health guideline levels</p>
+                </div>
+                <div class ="scroll_trigger" id = "population" style = "opacity:0;">
+                    <p class="stateNum">189,000,000</p>
+                    <p>individuals affected</p>
+                </div>
+            </div>
+            <div id = "lead">
+                <h2 class="scroll_trigger" style="opacity:0;">Lead</h2>
+                <p class ="scroll_trigger" style="opacity:0;">The most common sources of lead in drinking water are lead pipes, faucets, and plumbing fixtures.
+                    Certain pipes that carry drinking water from the water source to the home may contain lead.
+                    Household plumbing fixtures, welding solder, and pipe fittings made prior to 1986 may also contain lead. </p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>aging water infrastructure: corrosion of lead pipes and other fixtures</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li>has varied negative health outcomes, including reduced cognitive performance, problems with mood and energy levels, anaemia and problems with the nervous system</li></ul>
+                <!--EWG did not provide state and population info for lead-->
+<!--                <div class ="scroll_trigger" id = "states" style = "opacity:0;">-->
+<!--                    <p class="stateNum" >49</p>-->
+<!--                    <p>states above health guideline levels</p>-->
+<!--                </div>-->
+<!--                <div class ="scroll_trigger" id = "population" style = "opacity:0;">-->
+<!--                    <p class="stateNum">189,000,000</p>-->
+<!--                    <p>individuals affected</p>-->
+<!--                </div>-->
+            </div>
+            <div id = "trihalo">
+                <h2 class="scroll_trigger" style="opacity:0;">Trihalomethanes</h2>
+                <p class ="scroll_trigger" style="opacity:0;">Disinfection by-products (DBP) are a class of chemical by-products also referred to as trihalomethanes (THMs),
+                    formed when chlorine or bromine interacts with the natural organic materials found in water. </p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>disinfection processes in drinking water sources</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li>can lead to central nervous system depression and hepatotoxicity </li>
+                    <li>may be carcinogenic</li></ul>
+                <div class ="scroll_trigger" id = "states" style = "opacity:0;">
+                    <p class="stateNum" >50</p>
+                    <p>states above health guideline levels</p>
+                </div>
+                <div class ="scroll_trigger" id = "population" style = "opacity:0;">
+                    <p class="stateNum">287,000,000</p>
+                    <p>individuals affected</p>
+                </div>
+            </div>
+            <div id = "atrazine">
+                <h2 class="scroll_trigger" style="opacity:0;">Atrazine</h2>
+                <p class ="scroll_trigger" style="opacity:0;">Atrazine is a widely used chlorotriazine herbicide active against broadleaf and grassy weeds.
+                It is applied pre- and post-emergence to agricultural land for crops such as corn and sorghum. It is also used as a non-selective herbicide.</p>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">Where it comes from:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"> <li>agricultural run-off</li></ul>
+                <p class ="scroll_trigger" id = "wherewhat" style="opacity:0;">What it does:</p>
+                <ul class ="scroll_trigger" style="opacity:0;"><li> linked to a number of negative health outcomes, including cancer and reproductive issues </li></ul>
+                <div class ="scroll_trigger" id = "states" style = "opacity:0;">
+                    <p class="stateNum" >22</p>
+                    <p>states above health guideline levels</p>
+                </div>
+                <div class ="scroll_trigger" id = "population" style = "opacity:0;">
+                    <p class="stateNum">16,000,000</p>
+                    <p>individuals affected</p>
+                </div>
+            </div>
+            <div id="filler">
+                <h3>...and there are many more present in a majority of the fifty states. Brockovich was just the beginning... </h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+#introduction1{
+    color:  #4d82ff;
+    opacity: 50%;
+    font-family: 'Montserrat';
+    font-weight:500;
+    font-size:40px;
+    position: absolute;
+    top: 200px;
+}
+#introduction2{
+    color:  #4d82ff;
+    opacity: 50%;
+    font-family: 'Montserrat';
+    font-weight:500;
+    font-size:40px;
+    position: absolute;
+    top: 600px;
+}
+
+#introduction3{
+    color:  #4d82ff;
+    opacity: 50%;
+    font-family: 'Montserrat';
+    font-weight:500;
+    font-size:40px;
+    position: absolute;
+    top: 1000px;
+}
+
+#legend{
+    width: 25%;
+    position: absolute;
+    top: 1350px;
+    margin-left: 10%;
+}
+
+#graphic_stream {
+    width:350px;
+    left:300px;
+}
+
+#pfos_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:1860px;
+    left:-10px;
+    position:absolute;
+    opacity: 1;
+}
+
+#arsenic_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:2610px;
+    left:-10px;
+    position:absolute;
+}
+
+#nitrates_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:3380px;
+    left:-10px;
+    position:absolute;
+}
+
+#lead_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:4140px;
+    left:-10px;
+    position:absolute;
+    opacity: 1;
+}
+
+#trihalo_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:4900px;
+    left:-10px;
+    position:absolute;
+    opacity: 1;
+}
+
+#atrazine_scale {
+    width:370px;
+    /*border:#000 1px solid;*/
+    top:5610px;
+    left:-10px;
+    position:absolute;
+    opacity: 1;
+}
+
+
+#lake {
+    width: 100%;
+}
+
+.viz{
+    /*height: 5015px;*/
+    object-fit:contain;
+    align-self: flex-start;
+    position:relative;
+    /*border:#000 solid 1px;*/
+    left:100px;
+}
+
+.main_scrolly{
+    /*border: 3px solid blue;*/
+    padding: 20px 40px 40px;
+    /*max-width: 640px;*/
+    display:flex;
+    position:relative;
+    /*overflow:hidden;*/
+}
+
+.text {
+    flex: 1 1 auto;
+    /*font-family:nyt-franklin,arial,helvetica,sans-serif;*/
+    font-family:'Open Sans';
+    font-weight:400;
+    font-size:17px;
+    /*line-height:14px;*/
+    filter:alpha(opacity=100);
+    /*opacity:0.5;*/
+    letter-spacing:0em;
+    text-align:left;
+    /*color:rgb(0,0,0);*/
+    color: darkslategray;
+    text-transform:none;
+    padding-bottom:0;
+    padding-top:0;
+    mix-blend-mode:normal;
+    font-style:normal;
+    padding-left:200px;
+}
+
+/*.textbody{*/
+/*    font-style:italic;*/
+/*    letter-spacing:0.1em;*/
+/*    !*text-align:center;*!*/
+/*    !*text-transform:uppercase;*!*/
+/*    color:rgb(2,153,206);*/
+/*}*/
+
+#pfos{
+    position: absolute;
+    top: 1850px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+#arsenic{
+    position: absolute;
+    top: 2600px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+#nitrates{
+    position: absolute;
+    top: 3370px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+#lead{
+    position: absolute;
+    top: 4130px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+#trihalo{
+    position: absolute;
+    top: 4890px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+#atrazine{
+    position: absolute;
+    top: 5600px;
+    /*top: 6.6289%;*/
+    /*left: 54.3904%;*/
+    margin-left: 3.875%;
+    /*width: 7.75%;*/
+    opacity: 1;
+}
+
+
+body{
+    padding: 50px;
+}
+
+.scroll_trigger p { white-space: nowrap; }
+
+h1{
+    align: center;
+}
+
+h2{
+    color: #ce9d6f;
+    /*font-family:'Montserrat', sans-serif;*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight:500;
+    /*font-weight:500;*/
+    font-size:42px;
+}
+
+h3{
+    color: #96a1a1;
+    font-family:'Montserrat', sans-serif;
+    font-weight:500;
+    font-size:32px;
+}
+
+#wherewhat{
+    color: darkgray;
+    opacity: 50%;
+    /*font-variant: small-caps;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
+.stateNum{
+    /*color:#ce9d6f;*/
+    color:#46EEAA;
+    /*font-family:'Montserrat', sans-serif;*/
+    font-family:'Fjalla One', sans-serif;
+    font-weight:500;
+    font-size:38px;
+}
+
+#states{
+    color: darkgray;
+    line-height:0.5;
+    text-indent: 20px;
+}
+
+#population{
+    color: darkgray;
+    line-height:0.5;
+    text-indent: 20px;
+}
+
+#filler{
+    position: absolute;
+    top: 6400px;
+    opacity: 1;
+}
